@@ -237,7 +237,6 @@ end
 def winning_team
   new_hash = {}
   game_hash.each do |location, team_data|
-    binding.pry
     total_points = 0
     team_data[:players].each do |player|
       player.each do |name,stats|
