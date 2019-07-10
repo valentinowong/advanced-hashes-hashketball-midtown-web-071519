@@ -244,7 +244,6 @@ def winning_team
       end
     end
     new_hash[location] = total_points
-    binding.pry
   end
   if new_hash[:home] > new_hash[:away]
     game_hash[:home][:team_name]
