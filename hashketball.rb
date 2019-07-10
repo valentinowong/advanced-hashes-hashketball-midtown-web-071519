@@ -244,8 +244,8 @@ def winning_team
       end
     end
     team_data[:total_points] = total_points
+    binding.pry
   end
-  binding.pry
 end
 
 winning_team
