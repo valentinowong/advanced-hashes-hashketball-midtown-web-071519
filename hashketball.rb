@@ -235,7 +235,6 @@ def most_points_scored
 end
 
 def winning_team
-  winners = ""
   game_hash.each do |location, team_data|
     binding.pry
     total_points = 0
@@ -243,8 +242,10 @@ def winning_team
       player.each do |name,stats|
         total_points += stats[:points]
       end
-    end 
+    end
+    team_data[:total_points] = total_points
   end
+  binding.pry
 end
 
 winning_team
