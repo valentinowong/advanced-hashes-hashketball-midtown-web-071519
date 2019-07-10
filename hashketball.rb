@@ -235,6 +235,7 @@ def most_points_scored
 end
 
 def winning_team
+  new_hash = {}
   game_hash.each do |location, team_data|
     binding.pry
     total_points = 0
@@ -243,7 +244,7 @@ def winning_team
         total_points += stats[:points]
       end
     end
-    team_data[:total_points] = total_points
+    new_hash[location] = total_points
     binding.pry
   end
 end
